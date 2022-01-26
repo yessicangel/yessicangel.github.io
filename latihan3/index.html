@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+main{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 10px auto;
+    /*background-color: #efefef;*/
+}
+.baris {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    /*background-color: #ddd;*/
+}
+.baris:nth-child(1){
+    height: 50px;
+}
+.baris:nth-child(3){
+    height: 80px;
+}
+.baris:nth-child(4){
+    height: 20px;
+}
+.fullcol {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*background-color: #ccc;*/
+}
+.halfcol {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    margin-right: 5%;
+    /*background-color: #ddd;*/
+    float: left;
+}
+.fullwidthcontent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
+ }
+.baris:nth-child(2) .fullwidthcontent {
+    margin-left: 5%;
+    margin-right: 0%;
+}
+.baris:nth-child(2) .fullwidthcontent {
+   width: 95%;
+}
+.baris:nth-child(3) .fullwidthcontent {
+    width: 80%;
+}
+.halfwidthcontent {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-right: 5%;
+    background-color: coral;
+    float: left;
+}
+.baris:nth-child(1) .halfwidthcontent {
+    margin-left: 50%;
+    margin-right: 0%;
+}
+.baris:nth-child(2) .halfwidthcontent {
+    margin-left: 50%;
+    margin-right: 0%;
+}
+.baris:nth-child(5) .halfwidthcontent {
+    width: 60%;
+    height: 400%;
+}
+.baris:nth-child(3) .halfwidthcontent {
+   margin-left: 40%;
+   -webkit-border-radius: 10px
+}
+.quarterwidthcontent {
+    position: relative;
+    width: 15%;
+    height: 100%;
+    margin-right: 10%;
+    background-color: cadetblue;
+    float: left;
+}
+.baris:nth-child(4) .quarterwidthcontent {
+    margin-left: 2%;
+    margin-right: 0%;
+}
+    .baris:nth-child(5) .quarterwidthcontent {
+    margin-left: 2%;
+    margin-right: 0%;
+    }
+    .baris:nth-child(5) .quarterwidthcontent {
+     width:  31%;
+     height: 310%;
+}
+    .h1 {
+        line-height: 50px;
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: 10;
+        color: white;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .h2 {
+        line-height: 50px;
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: 10;
+        color: black;
+        margin: 0;
+        margin-left: 10px;
+    }
+   .table {
+    border:1px solid black;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+
+    }
+    th{
+    border:1px solid black;
+    width: 100%;
+    height: 100%; 
+    }
+   td {
+    border:1px solid black;
+    width: 100%;
+    height: 100%; 
+    }
+    .h3 {
+        line-height: 100px;
+        font-size: 105px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        margin-left: 25%;
+        float: left;
+    }
+    .h4 {
+        line-height: 35px;
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left;
+    }
+    .hr {
+        margin-left: 5%;
+    }
+    .h5 {
+        line-height: 20px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 10px;
+        margin-left: 5%;
+        float: left;  
+    }
+    .h6 {
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 5px;
+        margin-left: 5%;
+        float: left; 
+    }
+    .h7 {
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 5px;
+        margin-left: 5%;
+        float: left;
+    }
+    .h8 {
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 5px;
+        margin-left: 8%;
+        margin-right: 10%;
+        float: left;
+    }
+    .h9 {
+        font-size: 43px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 5px;
+        margin-left: 8%;
+        margin-right: 10%;
+     line-height: 53px;
+        float: left;
+    }
+    .h10 {
+        position: relative;
+        font-size: 14px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 5px;
+        margin-left: 8%;
+        margin-right: 10%;
+        margin-top: 5px;
+        float: left; 
+    }
+    .h11 {
+        position: relative;
+        line-height: 2px;
+        font-size: 14px;
+        font-family: sans-serif;
+        font-weight: 10;
+        color: black;
+        margin-left: 8%;
+        margin-right: 10%;
+        margin-top: 5px;
+        float: left; 
+    } 
+    .center {
+        margin-top: 10%;
+        margin-bottom: 25%;
+        margin-left: 40%;
+        margin-right: 50%;
+        width: 50%;
+
+     
+    }
+
+        </style>
+    </head>
+    <body>
+    <main>
+        <div class="baris">
+            <div class="halfcol">
+                <div class="fullwidthcontent"><h1 class="h1">Stand Departure Information</h1></div>
+                
+            </div>
+            <div class="halfcol">
+                <div class="halfwidthcontent"><h2 class="h2">Bus Timetable</h2></div>
+            </div>
+        </div>
+        <div class="baris">
+            <div class="halfcol">
+                <div class="fullwidthcontent"><table style="table">
+                   <table cellspacing="1" cellpadding="10">
+                    <tr>
+                      <th>Route No.</th>
+                      <th>Location</th>
+                      <th>Stand</th>
+                    </tr>
+                    <tr>
+                      <td>81,82,83,84,85</td>
+                      <td>Perth Busport</td>
+                      <td>9 - 12</td>
+                    </tr>
+                  </table></div>
+
+            </div>
+            <div class="halfcol">
+                <div class="halfwidthcontent"><h3 class="h3">42</h3></div>
+            </div>
+        </div>
+
+        <div class="baris">
+            <div class="halfcol">
+                <div class="fullwidthcontent"><h4 class="h4">Transperth Information</h4></div>
+                <hr color="black"></hr>
+            </div>
+            <div class="halfcol">
+                <div class="halfwidthcontent"><h5 class="h5">For full service details for these routes, 
+                    refer to timetable 43.</h5></div>
+        </div>
+    </div>
+
+        <div class="baris">
+            <div class="halfcol">
+                <div class="quarterwidthcontent"><h6 class="h6">Call us</h6></div>
+            </div>
+            <div class="halfcol">
+            <div class="quarterwidthcontent"><h6 class="h7">Routes</h6></div>
+        </div>
+    </div>
+
+        <div class="baris">
+            <div class="halfcol">
+                <div class="halfwidthcontent"><h6 class="h8">info line on 13 62 13 (TIS 13 14 50)</h6><h6 class="h8">Hearing or speech impaired?
+                    Call via NRS on 133 677</h6><h6 class="h8">Visit an InfoCenter at:</h6>
+                    <ul><li>Elizabeth Quay Bus Station</li>
+                        <li>Perth Busport</li>
+                        <li>Perth Station</li>
+                        <li>Perth Underground station</li>
+                    </ul>
+                    <h6 class="h8">Got an Iphone or Android device?</h6>
+                    <h6 class="h8">Download our free app now to help you plan your journey.</h6>
+                    <h6 class="h8">Visit us Online</h6>
+                    <h6 class="h8">transperth.wa.gov.au</h6>
+                </div>
+                
+            </div>
+                <div class="halfcol">
+                <div class="quarterwidthcontent">
+                    <h6 class="h9">81</h6>
+                    <h6 class="h9">82</h6>
+                    <h6 class="h9">83</h6>
+                    <h6 class="h9">84</h6>
+                    <h6 class="h9">85</h6>
+                </div>
+                <div class="quarterwidthcontent">
+                    <h6 class="h10">Perth - Wembley </h6>
+                    <h6 class="h11"> Via Cambridge St</h6>
+                    <h6 class="h10">Perth - Wembley </h6>
+                    <h6 class="h11">Via Cambridge St</h6>
+                    <h6 class="h10">Perth - Wembley </h6>
+                    <h6 class="h11">Via Cambridge St</h6>
+                    <h6 class="h10">Perth - Wembley </h6>
+                    <h6 class="h11">Via Cambridge St</h6>
+                    <h6 class="h10">Perth - Wembley </h6>
+                    <h6 class="h11">Via Cambridge St</h6>
+                </div>
+                <div class="quarterwidthcontent">
+                    <h6 class="center"><img src="https://w7.pngwing.com/pngs/299/826/png-transparent-disabled-parking-permit-disability-car-park-accessibility-sign-wheelchair-blue-text-logo-thumbnail.png" alt="HTML tutorial" style="width:25px;height:25px;align:center"></h6>
+                    <h6 class="center"><img src="https://w7.pngwing.com/pngs/299/826/png-transparent-disabled-parking-permit-disability-car-park-accessibility-sign-wheelchair-blue-text-logo-thumbnail.png" alt="HTML tutorial" style="width:25px;height:25px;align:center"></h6>
+                    <h6 class="center"><img src="https://w7.pngwing.com/pngs/299/826/png-transparent-disabled-parking-permit-disability-car-park-accessibility-sign-wheelchair-blue-text-logo-thumbnail.png" alt="HTML tutorial" style="width:25px;height:25px;align:center"></h6>
+                    <h6 class="center"><img src="https://w7.pngwing.com/pngs/299/826/png-transparent-disabled-parking-permit-disability-car-park-accessibility-sign-wheelchair-blue-text-logo-thumbnail.png" alt="HTML tutorial" style="width:25px;height:25px;align:center"></h6>
+                    <h6 class="center"><img src="https://w7.pngwing.com/pngs/299/826/png-transparent-disabled-parking-permit-disability-car-park-accessibility-sign-wheelchair-blue-text-logo-thumbnail.png" alt="HTML tutorial" style="width:25px;height:25px;align:center"></h6>
+                </div>
+            </div>
+        </div>
+    </main>
+    </body>
+</html>

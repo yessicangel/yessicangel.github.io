@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta= name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function Parameters</title>
+        
+    <style>
+      *{
+         margin: 0;
+         padding: 5px;
+      }
+      aside {
+        float: right;
+        width: 40%;
+        position: relative;
+        right: 70px;
+      }
+      #content {
+        float: left;
+        width: 800px;
+      }
+      .box{
+        width: 800px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 8px;
+        color: white;
+      }
+      .tab{
+        padding: 6px 9px;
+        border: 1px solid black;
+        border-radius: 8px;
+        float: left;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      var dataku = [
+        '<h1>About Me</h1><h2>Halo! Saya Yessica Angel, seorang mahasiswa jurusan Desain Komunikasi Visual di Universitas Pelita Harapan, di peminatan desain grafis. Saya sangat senang mempelajari hal baru dan sangat baik dalam bekerja baik individu maupun berkelompok.</h2>',
+        '<h1>Education</h1><h2>SMA Tarakanita Gading Serpong</h2><h3>2017-2020</h3><h2>Universitas Pelita Harapan</h2><h3>Desain Komunikasi Visual (Desain Grafis)</h3>',
+        '<h1>Interest</h1><h2>Saya sangat senang menghabiskan waktu saya dengan menonton drama korea atau bermain game, saya juga senang pergi ke tempat-tempat yang belum pernah saya kunjungi dan mencoba makanannya, selain itu saya juga suka bermain badminton bersama teman-teman. </h2>'
+        ];
+    </script>
+  </head>
+  <body style="margin-top: 10px; margin-left: 10px;">
+
+    <div id="content">
+      <div id="jon" class="box"></div>
+    </div>
+
+    <aside  >
+      <div id="tab_satu" class="tab" onclick="ubahwarna('skyblue','tab_satu', dataku[0])">About</div><br><br>
+      <div id="tab_dua" class="tab" onclick="ubahwarna('lightseagreen','tab_dua', dataku[1])">Education</div><br><br>
+      <div id="tab_tiga" class="tab" onclick="ubahwarna('indianred','tab_tiga', dataku[2])">Interest</div>
+    </aside>
+
+    
+  </body>
+</html>
+<script>
+  function ubahwarna(x,y,z) {
+    document.querySelector('#jon').style.backgroundColor = x;
+    document.querySelector('#jon').innerHTML = z
+    if (y == 'tab_satu') {
+      document.querySelector('#tab_satu').style.backgroundColor = 'skyblue' ;
+      document.querySelector('#tab_dua').style.backgroundColor = 'white' ;
+      document.querySelector('#tab_tiga').style.backgroundColor = 'white' ;
+    } else if (y == 'tab_dua'){
+      document.querySelector('#tab_satu').style.backgroundColor = 'white' ;
+      document.querySelector('#tab_dua').style.backgroundColor = 'lightseagreen' ;
+      document.querySelector('#tab_tiga').style.backgroundColor = 'white' ;
+    } else if (y == 'tab_tiga'){
+      document.querySelector('#tab_satu').style.backgroundColor = 'white' ;
+      document.querySelector('#tab_dua').style.backgroundColor = 'white' ;
+      document.querySelector('#tab_tiga').style.backgroundColor = 'indianred' ;
+  }
+}
+</script>
